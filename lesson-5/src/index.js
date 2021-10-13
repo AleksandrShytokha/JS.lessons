@@ -123,8 +123,8 @@ function allCostGet() {
     let elementCost = 0;
     let allCost = 0;
 
-    shoppingReceipt.forEach(Element => {
-        elementCost = Element.quantity * Element.price;
+    shoppingReceipt.forEach(element => {
+        elementCost = element.quantity * element.price;
         allCost += elementCost;
         return allCost;
     });
@@ -137,11 +137,11 @@ function theMostExpensiveItem() {
     let mostExpensive = {};
     let maxPrice = 0;
 
-    shoppingReceipt.forEach(Item => {
-        totalPrice = Item.quantity * Item.price;
+    shoppingReceipt.forEach(item => {
+        totalPrice = item.quantity * item.price;
         if (maxPrice < totalPrice) {
             maxPrice = totalPrice;
-            mostExpensive = Object.assign({}, Item);
+            mostExpensive = Object.assign({}, item);
         } else {
             return maxPrice;
         }
