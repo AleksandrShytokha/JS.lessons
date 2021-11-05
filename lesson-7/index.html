@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-8/DOM</title>
+</head>
+
+<body>
+    <div id="1-st-task" style="display: none;">
+        <h1>Playlist</h1>
+        <ol id="playlist">Top songs<hr>
+        </ol>
+    </div>
+    <div id="2-nd-task" style="display: none;">
+        <button id="openBtn">Open modal window</button>
+        <div id="modal-window" style="display: none; position: fixed; z-index: 1; left: 15%; top: 15%; width: 70%; height: 50%; background-color: brown;">
+            <p>Tu popalsa na kapkan diyavola, on je satana ili lucifer.</p>
+            <button id="closeBtn">Close modal window</button>
+        </div>
+    </div>
+    <div id="3-rd-task" style="display: none; width: 200px; height: 450px; margin-left: 40%; margin-top: 10%; background-color: brown;">
+        <div class="traffic-lights" style="background-color: grey; width: 170px; height: 300px; margin-left: 15px;">
+            <div id="red-color" class="lights" style="margin-left: 35%; margin-top: 10%; width: 50px; height: 50px; border: 1px solid rgb(255, 255, 255); border-radius: 100%;"></div>
+            <div id="yellow-color" class="lights" style="margin-left: 35%; margin-top: 10%; width: 50px; height: 50px; border: 1px solid rgb(255, 255, 255); border-radius: 100%;"></div>
+            <div id="green-color" class="lights" style="margin-left: 35%; margin-top: 10%; width: 50px; height: 50px; border: 1px solid rgb(255, 255, 255); border-radius: 100%;"></div>
+            <button id="switch-btn" style="margin-left: 20%; margin-top: 10%;">Switch the light</button>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
