@@ -1,0 +1,69 @@
+.div-text {
+    height: 60px;
+    display: none;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid #000000;
+}
+
+i {
+    opacity: 0.5;
+}
+
+.div-button {
+    margin: 10px 0;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-text-button:hover {
+    cursor: pointer;
+}
+
+.text-area {
+    display: none;
+}
+
+#task-2-table {
+    width: 250px;
+    border: 2px solid #000000;
+    display: none;
+}
+
+td {
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+thead:hover {
+    cursor: pointer;
+}
+
+#content__textarea {
+    display: none;
+}
+
+.content__textarea {
+    display: block;
+    position: relative;
+    width: 200px;
+    margin: auto;
+    text-align: justify;
+    padding: 5px;
+    border: 2px solid blue;
+    margin-bottom: 10px;
+  }
+  .content__textarea--resizer {
+    display: block;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 2px solid blue;
+    cursor: col-resize;
+  }
