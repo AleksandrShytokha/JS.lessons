@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: goldenrod;
+}
+
+/*Second-task*/
+.calc-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    background: #333333;
+    overflow: hidden;
+    display: none;
+}
+
+.calc-container #display {
+    width: 100%;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+    background-color: #ffffff;
+    text-align: right;
+    border: 1px solid black;
+    outline: none;
+    transition: .5s;
+}
+
+.calc-container .clear {
+    background-color: red;
+    color: #ffffff;
+}
+
+.calc-container input {
+    cursor: pointer;
+    font-size: 30px;
+    background: #333333;
+    color: #ffffff;
+    width: 97px;
+    height: 95px;
+    margin-top: 5px;
+}
+
+.calc-container input:hover {
+    color: red;
+}
+
+.calc-container .clear:hover {
+    color: black;
+}
+
+/*First-task*/
+.background-container {
+    width: inherit;
+    height: 100vh;
+    display: none;
+    background-image: url('../img/background-image.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.tab-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333333;
+    width: 40vw;
+    height: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabs-nav {
+    background-color: #2b2f3f;
+    padding: 40px 5px;
+    height: 20%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.tabs-content-container {
+    height: 80%;
+    background-color: #212434;
+    color: #ffffff;
+}
+
+.tabs-content-item {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content-item-conteiner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content-item-conteiner-right {
+    width: 20vw;
+    padding-top: 30px;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.release-title {
+    font-size: 15px;
+}
+
+button {
+    position: absolute;
+    margin: -2.8% 0 0 14%;
+    width: 20%;
+    height: 40px;
+    color: #ffffff;
+    background-color: #13e18c;
+    border: none;
+}
+
+li {
+    opacity: 0.5;
+}
+
+.tab-button.active {
+    opacity: 1;
+}
+
+button:hover, li:hover {
+    cursor: pointer;
+    opacity: 1;
+}

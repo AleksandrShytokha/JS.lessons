@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-lesson/jQuery</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="calc-container">
+        <input id="display" type="text" placeholder="0"><br>
+
+        <input class="clear" type="button" value="C">
+        <input class="clc" type="button" value=".">
+        <input class="clc" type="button" value="/">
+        <input class="clc" type="button" value="*"><br>
+        <input class="clc" type="button" value="7">
+        <input class="clc" type="button" value="8">
+        <input class="clc" type="button" value="9">
+        <input class="clc" type="button" value="-"><br>
+        <input class="clc" type="button" value="4">
+        <input class="clc" type="button" value="5">
+        <input class="clc" type="button" value="6">
+        <input class="clc" type="button" value="+"><br>
+        <input class="clc" type="button" value="2">
+        <input class="clc" type="button" value="3">
+        <input class="clc" type="button" value="1">
+        <input class="result-of-calc" type="button" value="=">
+    </div>
+    <div id="first-task" class="background-container">
+        <div id="tabs-container" class="tab-container">
+            <div class="tabs-nav">
+                <ul class="tabs-nav-menu">
+                    <li class="tab-button">INFORMATION</li>
+                    <li class="tab-button" >RATING INFO</li>
+                    <li class="tab-button">WHERE TO BUY</li>
+                </ul>
+            </div>
+            <div class="tabs-content-container">
+                <div class="tabs-content-item Information active">
+                    <div class="content-item-conteiner-left">
+                        <img src="./img/FarCry4-logo.png" alt="chiki briki">
+                    </div>
+                    <div class="content-item-conteiner-right">
+                        <h1>
+                            FarCry 4
+                            <p class="release-title">
+                                First Released Nov 17, 2014
+                            </p>
+                        </h1>
+                        <p>
+                            In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of
+                            the Hima
+                            layas struggling under the regime of a despotic self-appointed king.
+                        </p>
+                        <p>
+                            20% OFF!<br>$59.96 <button>BUY IT NOW</button> 
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-content-item RatingInfo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi nihil minus aliquid
+                    dolores
+                    alias magnam quis delectus asperiores expedita, quaerat sit et animi tempora quae aperiam hic?
+                    Ducimus,
+                    in!
+                </div>
+                <div class="tabs-content-item Buy">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut mollitia distinctio dolor cumque,
+                    quisquam
+                    odio consectetur nesciunt magnam iure assumenda porro earum facere. Est rem velit molestiae
+                    voluptates
+                    perspiciatis necessitatibus?
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./src/index.js"></script>
+
+</html>
