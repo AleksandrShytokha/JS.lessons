@@ -10,7 +10,7 @@ $(document).ready(function () {
 function getMovies(movie, type) {
 
   const API_KEY = '945578ed';
-  let URL = 'http://www.omdbapi.com/?apikey=' + API_KEY + `&s=${movie}&type=${type}`;
+  let URL = 'https://www.omdbapi.com/?apikey=' + API_KEY + `&s=${movie}&type=${type}`;
 
   $.ajax({
     method: 'GET',
@@ -38,7 +38,7 @@ function getMovies(movie, type) {
 
       const pageIsClicked = +e.target.innerText;
 
-      URL = 'http://www.omdbapi.com/?apikey=' + API_KEY + `&s=${movie}&type=${type}&page=${pageIsClicked}`;
+      URL = 'https://www.omdbapi.com/?apikey=' + API_KEY + `&s=${movie}&type=${type}&page=${pageIsClicked}`;
 
       $.ajax({
         method: 'GET',
@@ -75,7 +75,7 @@ function getMovieDetails(id) {
   console.log(selectedMovieId);
 
   const API_KEY = '945578ed';
-  const URLid = 'http://www.omdbapi.com/?apikey=' + API_KEY + `&i=${selectedMovieId}`;
+  const URLid = 'https://www.omdbapi.com/?apikey=' + API_KEY + `&i=${selectedMovieId}`;
 
   $.ajax({
     method: 'GET',
