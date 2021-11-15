@@ -1,0 +1,22 @@
+.test-class {
+    color: red;
+    font-size: 20px;
+
+    &__item {
+        background-color: yellow;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.test-2 {
+    border: 2px solid black;
+    border-radius: 50%;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+}
